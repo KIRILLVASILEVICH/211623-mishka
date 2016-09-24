@@ -1,0 +1,138 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+</head>
+<body>
+
+  <header="page-header">
+    <div class="page-header__top-row">
+      <a class="logo" href="index.html"><img src=""></a>
+      <button class="nav-tooggle"></button>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link"></a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link"></a>
+        </li>
+      </ul>
+      <form action="" class="main-search" method="post">
+        <input type="search">
+        <button type="submit"></button>
+      </form>
+      <a href="#" class="cart-counter">Корзина: пока пуста</a>
+    </nav>
+    <div class="intro">
+      <h1 class="intro__title">Каталог товаров</h1>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="catalog">
+      <article class="catalog-item">
+        <a href="#" class="catalog-item__image-link">
+          <img src="#" alt="Зайчик-попрыгайчик">
+        </a>
+        <div class="catalog-item__description">
+          <div class="catalog-item__description-header">
+            <a href="#" class="catalog-item__title">Зайчик-попрыгайчик</a>
+            <p class="catalog-item__text">Рост 30см, вес 200 г</p>
+          </div>
+          <div class="catalog-item__description-footer">
+            <span class="catalog-item__price">1 200 руб.</span>
+            <a href="#" class="catalog-item__add-cart"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalog-item">
+        <a href="#" class="catalog-item__image-link">
+          <img src="#" alt="Корзинка">
+        </a>
+        <div class="catalog-item__description">
+          <div class="catalog-item__description-header">
+            <a href="#" class="catalog-item__title">Корзинка для белья</a>
+            <p class="catalog-item__text">Диаметр 15см, высота 10 см</p>
+          </div>
+          <div class="catalog-item__description-footer">
+            <span class="catalog-item__price">690 руб.</span>
+            <a href="#" class="catalog-item__add-cart"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalog-item">
+        <a href="#" class="catalog-item__image-link">
+          <img src="#" alt="Корзинка">
+        </a>
+        <div class="catalog-item__description">
+          <div class="catalog-item__description-header">
+            <a href="#" class="catalog-item__title">Большая корзинка для игрушек</a>
+            <p class="catalog-item__text">Диаметр 30см, высота 30 см</p>
+          </div>
+          <div class="catalog-item__description-footer">
+            <span class="catalog-item__price">1 500 руб.</span>
+            <a href="#" class="catalog-item__add-cart"></a>
+          </div>
+        </div>
+      </article>
+
+      <section class="media">
+        <div class="media__content">
+          <div class="media__header">
+            <img src="#" alt="Camera">
+            <h2 class="media__title">Процесс производства</h2>
+          </div>
+        </div>
+        <div class="media__video">
+          <img src="#" alt="Picture">
+          <img src="#" alt="Play">
+        </div>
+        <div class="media__footer">
+          <p class="media__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#" class="media__btn btn">Сделать заказ</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="social">
+      <a href="#" class="social-link social-link--yt"></a>
+      <a href="#" class="social-link social-link--fb"></a>
+      <a href="#" class="social-link social-link--tw"></a>
+    </div>
+    <div class="copyright">
+      Разработано
+      <a href="http://htmlacademy.ru" class="copyright__link"></a>
+    </div>
+  </footer>
+
+  <!-- Забыл для чего нужен класс оверлей  -->
+  <div class="modal-overlay"></div>
+  <div class="modal-cart">
+    <h3 class="modal-cart__title">Добавить в корзину</h3>
+    <span class="modal-cart__text">Выберите размер:</span>
+
+    <form method="POST" class="modal-cart__form">
+      <div class="modal-cart__field">
+        <input type="radio" name="size" id="size-s" value="size-s">
+        <label for="size-s">S</label>
+      </div>
+
+      <div class="modal-cart__field">
+        <input type="radio" name="size" id="size-m" value="size-m">
+        <label for="size-m">M</label>
+      </div>
+
+      <div class="modal-cart__field">
+        <input type="radio" name="size" id="size-l" value="size-l">
+        <label for="size-l">L</label>
+      </div>
+
+      <button type="submit" class="modal-cart__btn btn">Добавить</button>
+    </form>
+  </div>
+</body>
+</html>
