@@ -1,0 +1,224 @@
+.order-form {
+  padding-bottom: 30px;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+}
+
+.order-form__group {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 33px;
+}
+
+.order-form__label {
+  display: block;
+  order: -1;
+  cursor: pointer;
+  color: $bg-black;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+  font-weight: 700;
+}
+
+.order-form__title {
+  position: relative;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+  color: $bg-light-mint;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.order-form__text {
+  height: 50px;
+  min-width: 260px;
+  border: none;
+  box-shadow: 0 2px 0 0 $border-black;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+  color: $font-gray;
+  background: transparent;
+
+  &:invalid {
+    box-shadow: 0 2px 0 0 $border-error;
+  }
+
+  &:valid {
+    box-shadow: 0 2px 0 0 $border-black;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: 0 2px 0 0 $bg-light-mint;
+  }
+
+  &:disabled {
+    color: $disable-color;
+    box-shadow: 0 2px 0 0 $disable-color;
+  }
+
+  &:disabled ~ .order-form__label {
+    color: $disable-color;
+  }
+}
+
+.order-form__wrapper {
+  @include container;
+}
+
+.order-form__wrapper:not(:only-child) {
+  padding-top: 33px;
+}
+
+.order-form__wrapper:not(:only-child) .order-form__group {
+  padding-top: 0;
+}
+
+.order-form__message {
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 0 2px $border-black;
+  margin: 25px 0;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+  color: $font-gray;
+  padding: 15px;
+
+  &:invalid {
+    box-shadow: 0 0 0 2px $border-error;
+  }
+
+  &:active,
+  &:hover {
+    box-shadow: 0 0 0 2px $bg-light-mint;
+  }
+
+  &:disabled {
+    color: $disable-color;
+    box-shadow: 0 0 0 2px $disable-color;
+  }
+}
+
+.order-form__check {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-left: 62px;
+  margin-bottom: 44px;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 2px solid $border-dark-gray;
+    box-sizing: border-box;
+    left: -62px;
+    top: -8px;
+  }
+}
+
+.order-form__check:hover:before {
+  border: 2px solid $bg-light-mint;
+  transition: all 350ms;
+}
+
+.order-form__check:active:before {
+  border: 2px solid $disable-color;
+  transition: all 0.4s;
+}
+
+.order-form__field:disabled + .order-form__check {
+  color: $disable-color;
+}
+
+.order-form__field:disabled + .order-form__check:before {
+  border: 2px solid $disable-color;
+}
+
+.order-form__field:disabled + .order-form__toggle {
+  color: $disable-color;
+}
+
+.order-form__field:disabled + .order-form__toggle:before {
+  border: 2px solid $disable-color;
+}
+
+.order-form input[type="radio"]:checked:disabled + label:before {
+  background: $disable-color;
+}
+
+.order-form input[type="checkbox"]:checked:disabled + label:after {
+  border-right: 3px solid $disable-color;
+  border-bottom: 3px solid $disable-color;
+}
+
+.order-form__toggle {
+  display: block;
+  position: relative;
+  margin-left: 62px;
+  margin-bottom: 30px;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*0.9;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $border-dark-gray;
+    box-sizing: border-box;
+    left: -62px;
+    top: -8px;
+  }
+}
+
+.order-form__toggle:hover:before {
+  border: 2px solid $bg-light-mint;
+  transition: all 350ms;
+}
+
+.order-form__toggle:active:before {
+  border: 2px solid rgba($border-dark-gray, 0.3);
+  transition: all 0.4s;
+}
+
+.order-form input[type="radio"]:checked + label:before {
+  background: $bg-light-mint;
+  box-shadow: 0 0 0 12px $bg-white inset;
+}
+
+.order-form input[type="checkbox"]:checked + label:after {
+  position: absolute;
+  content: "";
+  left: -44px;
+  top: 3px;
+  width: 5px;
+  border-right: 3px solid #333;
+  height: 11px;
+  border-bottom: 3px solid #333;
+  transform: rotate(45deg);
+}
+
+.order-form__attention {
+  font-size: $base-font-size*1.3;
+  line-height: $base-line-height*0.9;
+}
+
+.order-form__btn {
+  margin: 25px 0;
+  width: 100%;
+  background: $bg-white;
+}
+
+.order-form__footer {
+  @include container;
+  box-sizing: border-box;
+}
