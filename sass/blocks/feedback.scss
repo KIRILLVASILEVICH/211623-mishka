@@ -1,0 +1,41 @@
+.feedback {
+  margin: 30px 0;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.feedback__title {
+  font-size: $base-font-size*2.5;
+  line-height: $base-line-height*1.5;
+  margin: 0;
+}
+
+.feedback__text {
+  font-size: $base-font-size*1.5;
+  line-height: $base-line-height*1.5;
+  padding: 24px 0;
+}
+
+.feedback__author {
+  display: block;
+}
+
+.feedback__author-name {
+  display: block;
+  margin-bottom: 4px;
+  font-size: $base-font-size*1.8;
+  line-height: $base-line-height*1.2;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.feedback__author-link {
+  display: block;
+  font-size: $base-font-size*1.8;
+  line-height: $base-line-height*1.2;
+  font-style: normal;
+}
+
+.feedback__btn {
+  width: 260px;
+}

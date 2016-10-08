@@ -1,0 +1,21 @@
+.main-nav {
+  display: block;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  background: $bg-white;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $border-light-gray;
+  border-top: 1px solid white;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 26px 0 26px 76px;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*1.2;
+}

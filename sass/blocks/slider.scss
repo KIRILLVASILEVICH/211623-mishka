@@ -1,0 +1,40 @@
+.slider__arrows {
+  @include clearfix;
+  margin: 36px 0;
+}
+
+.slider__prev {
+  width: 129px;
+  min-height: 50px;
+  border: 1px solid $border-light-gray;
+  background: $bg-white;
+  margin: 0;
+  background: url("../img/icon-left-arrow.svg") no-repeat center center;
+  float: left;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__next {
+  float: right;
+  width: 129px;
+  min-height: 50px;
+  border: 1px solid $border-light-gray;
+  background: $bg-white;
+  margin: 0;
+  background: url("../img/icon-right-arrow.svg") no-repeat center center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

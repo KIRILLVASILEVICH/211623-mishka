@@ -1,0 +1,19 @@
+.logo {
+  width: 86px;
+  height: auto;
+  display: block;
+  margin: 15.5px auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.logo img {
+  width: 100%;
+}

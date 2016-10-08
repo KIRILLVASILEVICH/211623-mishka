@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: $button-padding;
+  border: 2px solid $border-dark-gray;
+  color: $font-gray;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: $base-font-size*1.7;
+  transition: all 0.4s;
+
+  &:hover {
+    color: $font-white;
+    background: $border-dark-gray;
+  }
+
+  &:active {
+    color: rgba($font-white, 0.3);
+    background: $border-dark-gray;
+  }
+}
