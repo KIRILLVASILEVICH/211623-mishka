@@ -1,5 +1,5 @@
 .contacts {
-  padding: 33px 0;
+  padding: 33px 0 40px;
 }
 
 .contacts__wrapper {
@@ -46,11 +46,138 @@
 
 .contacts__map {
   position: relative;
-  @include container;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  width: 320px;
+  height: 457px;
+  margin: 40px auto;
+
+  &::after{
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 100px;
+    top:35%;
+    left: 45%;
+    background: url("../img/icon-map-pin.svg")
+  }
 }
 
 .contacts__btn {
+  display: block;
   width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width:$break-tablet) {
+  .contacts {
+    padding: 60px 0;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .contacts__title {
+    margin: 0;
+    position: relative;
+    font-size: $base-font-size*4.3;
+    line-height: $base-line-height*2.5;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background: url("../img/flag.svg");
+      right: 0;
+      top: -16px;
+    }
+  }
+
+  .contacts__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 334px;
+    font-size: $base-font-size*1.7;
+    line-height: $base-line-height*1.5;
+  }
+
+  .contacts__link {
+    display: block;
+    width: 210px;
+    word-wrap: break-word;
+  }
+
+  .contacts__text {
+    display: block;
+    width: 210px;
+    word-wrap: break-word;
+  }
+
+  .contacts__field {
+    display: block;
+    padding: 0;
+    min-width: 55px;
+    margin-right: 24px;
+    word-wrap: break-word;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: auto;
+    margin: 52px auto 60px;
+  }
+
+  .contacts__btn {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:$break-desktop) {
+  .contacts {
+    position: relative;
+    padding-bottom: 107px;
+    padding-top: 138px;
+  }
+
+  .contacts__wrapper {
+    width: 300px;
+    margin-left: 175px;
+    margin-right: 50px;
+    margin-bottom: 47px;
+  }
+
+  .contacts__item {
+    margin-bottom: 30px;
+  }
+
+  .contacts__title {
+    width: 525px;
+    padding-left: 175px;
+    box-sizing: border-box;
+    font-size: $base-font-size*5.3;
+    line-height: $base-line-height*2.85;
+
+    &::after {
+      left: 64px;
+      top: -9px;
+    }
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+    position: absolute;
+    margin: 0;
+    top: 67px;
+    left: 50%;
+  }
+
+  .contacts__btn {
+    margin-left: 225px;
+  }
 }

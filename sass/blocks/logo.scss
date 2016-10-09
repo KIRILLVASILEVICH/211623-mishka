@@ -13,7 +13,42 @@
   }
 }
 
+.logo--footer {
+  display: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
 
 .logo img {
   width: 100%;
+}
+
+@media (min-width:$break-tablet) {
+  .logo {
+    width: 115px;
+    margin: 18px 0 18px;
+
+    &--footer {
+      width: 186px;
+      height: 34px;
+      display: block;
+      position: static;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width:$break-desktop) {
+  .logo {
+    width: 149px;
+    margin: 5px auto 0;
+
+    &--footer {
+      width: 186px;
+      height: 34px;
+      margin: 0;
+    }
+  }
 }

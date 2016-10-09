@@ -1,6 +1,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,19 +16,26 @@
         <li class="main-nav__item">
           <a class="main-nav__link">Каталог товаров</a>
         </li>
+        <li class="main-nav__item  main-nav__item--extra">
+          <a class="main-nav__link  main-nav__link--extra" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--extra">
+          <a class="main-nav__link  main-nav__link--extra" href="#">Распродажа</a>
+        </li>
         <li class="main-nav__item">
           <a href="form.html" class="main-nav__link">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
-          <a href="#" class="search-field">Поиск по сайту</a>
+          <a class="search-field" href="#"><svg class="icon  icon--search" width="18" height="19"><use xlink:href="#icon-search"></use></svg>Поиск по сайту</a>
         </li>
         <li class="main-nav__item">
-          <a href="#" class="cart-counter">Корзина: пока пуста</a>
+          <a class="cart-counter" href="#"><svg class="icon  icon--cart" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
     <div class="intro">
-      <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
+      <p class="intro-trigger">Бесплатная доставка по России</p>
+      <h1 class="intro__title">Каталог товаров</h1>
     </div>
   </header>
   <main class="page-main">
@@ -100,9 +108,9 @@
   </main>
   <footer class="page-footer">
     <div class="social">
-      <a href="#" class="social-link  social-link--inst"></a>
-      <a href="#" class="social-link  social-link--fb"></a>
-      <a href="#" class="social-link  social-link--tw"></a>
+      <a href="https://www.instagram.com/htmlacademy" class="social-link  social-link--inst"></a>
+      <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb"></a>
+      <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw"></a>
     </div>
     <div class="copyright">
       Разработано
