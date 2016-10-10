@@ -136,7 +136,7 @@
   display: block;
   position: relative;
   width: 100%;
-  margin-left: 62px;
+  padding-left: 62px;
   margin-bottom: 44px;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*0.9;
@@ -203,7 +203,7 @@
   border: 2px solid $disable-color;
 }
 
-.order-form input[type="radio"]:checked:disabled + label:before {
+.order-form input[type="radio"]:checked:disabled {
   background: $disable-color;
 }
 

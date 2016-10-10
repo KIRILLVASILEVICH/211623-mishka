@@ -2,7 +2,7 @@
   width: 86px;
   height: auto;
   display: block;
-  margin: 15.5px auto;
+  margin: 15px auto;
 
   &:hover {
     opacity: 0.6;
@@ -21,9 +21,9 @@
   }
 }
 
-.logo img {
+/*.logo img {
   width: 100%;
-}
+}*/
 
 @media (min-width:$break-tablet) {
   .logo {

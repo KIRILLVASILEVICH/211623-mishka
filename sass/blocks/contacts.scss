@@ -1,9 +1,12 @@
 .contacts {
   padding: 33px 0 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__wrapper {
-  display: table;
+ /* display: flex;
+  flex-direction: column;*/
   font-size: $base-font-size*1.5;
   line-height: $base-line-height*1.5;
 }
@@ -16,21 +19,22 @@
 
 .contacts__item {
   width: 260px;
-  display: table-row;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__field {
-  display: table-cell;
+  /*display: ;*/
   padding-top: 27px;
 }
 
 .contacts__text {
-  display: table-cell;
+  /*display: ;*/
 }
 
 .contacts__link {
   width: 184px;
-  display: table-cell;
+  /*display: ;*/
   font-weight: 500;
   border-bottom: 1px solid $font-light-mint;
 
