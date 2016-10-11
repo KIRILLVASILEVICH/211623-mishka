@@ -20,8 +20,8 @@
 .main-nav__link {
   display: block;
   padding: 26px 0 26px 76px;
-  font-size: $base-font-size*1.7;
-  line-height: $base-line-height*1.2;
+  font-size: 17px;
+  line-height: $base-line-height;
 }
 
 @media (max-width:$mobile-widths-only) {
@@ -134,7 +134,7 @@
   }
 
   .main-nav__link {
-    font-size: $base-font-size*1.5;
+    font-size: $base-font-size;
     padding: 15px 0;
   }
 
@@ -194,11 +194,10 @@
   .main-nav__link {
     box-sizing: border-box;
     padding: 33px 0 32px;
-    font-size: $base-font-size*1.7;
 
     &--extra {
       display: block;
-      font-size: $base-font-size*1.5;
+      font-size: 17px;
       padding: 17px 0;
     }
   }
@@ -213,6 +212,6 @@
   }
 
   .main-nav__list {
-    font-size: $base-font-size*1.5;
+    font-size: 17px;
   }
 }

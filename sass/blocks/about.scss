@@ -26,8 +26,6 @@
 }
 
 .about__title {
-  font-size: $base-font-size*2.5;
-  line-height: $base-line-height*1.5;
   margin: 0;
 }
 
@@ -40,8 +38,8 @@
 
 .about__text {
   padding-top: 15px;
-  font-size: $base-font-size*1.7;
-  line-height: $base-line-height;
+  font-size: 17px;
+  line-height: auto;
   font-weight: 700;
 }
 
@@ -99,15 +97,11 @@
     }
   }
 
-  .about__text {
-    font-size: $base-font-size*2;
-    line-height: $base-line-height*1.2;
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 
-  .about__title {
-    font-size: $base-font-size*4.3;
-    line-height: $base-line-height*5;
-  }
 }
 
 @media (min-width:$break-desktop) {
@@ -136,7 +130,7 @@
 
   .about__title {
     padding-left: 175px;
-    font-size: $base-font-size*5.3;
-    line-height: $base-line-height*5.7;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
