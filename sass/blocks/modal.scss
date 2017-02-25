@@ -43,3 +43,19 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@media (min-width:$break-tablet) {
+  .modal {
+    width: 584px;
+    height: 354px;
+  }
+
+  .modal__title {
+    font-size: $base-font-size*3;
+    line-height: $base-line-height*2.85;
+  }
+
+  .modal__title br {
+    display: none;
+  }
+}

@@ -11,3 +11,19 @@
     width: 33.334%;
   }
 }
+
+@media (min-width:$break-tablet) {
+  .catalog {
+    margin-top: 78px;
+  }
+}
+
+@media (min-width:$break-desktop) {
+  .catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include container;
+    margin-top: 113px;
+  }
+}
