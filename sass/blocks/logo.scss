@@ -2,7 +2,7 @@
   width: 86px;
   height: auto;
   display: block;
-  padding-top: 15px;
+  margin: 15.5px auto;
 
   &:hover {
     opacity: 0.6;
@@ -13,42 +13,7 @@
   }
 }
 
-.logo--footer {
-  display: none;
 
-  &:hover {
-    opacity: 1;
-  }
-}
-
-/*.logo img {
+.logo img {
   width: 100%;
-}*/
-
-@media (min-width:$break-tablet) {
-  .logo {
-    width: 115px;
-    margin: 18px 0 18px;
-
-    &--footer {
-      width: 186px;
-      height: 34px;
-      display: block;
-      position: static;
-      margin: 0;
-    }
-  }
-}
-
-@media (min-width:$break-desktop) {
-  .logo {
-    width: 149px;
-    margin: 5px auto 0;
-
-    &--footer {
-      width: 186px;
-      height: 34px;
-      margin: 0;
-    }
-  }
 }

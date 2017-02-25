@@ -41,13 +41,3 @@
   color: $disable-color;
   border: 2px solid $disable-color;
 }
-
-@media (min-width:$break-tablet) {
-  .modal-form__toggle {
-    width: 112px;
-  }
-
-  .modal-form__motion {
-    font-size: $base-font-size*1.7;
-  }
-}

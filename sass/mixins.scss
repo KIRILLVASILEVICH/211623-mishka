@@ -10,12 +10,4 @@
 @mixin container() {
   width: 260px;
   margin: 0 auto;
-
-  @media (min-width:$break-tablet) {
-    width: 668px;
-  }
-
-  @media (min-width:$break-desktop) {
-    width: 1050px;
-  }
 }

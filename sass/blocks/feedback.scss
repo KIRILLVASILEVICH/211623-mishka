@@ -5,14 +5,14 @@
 }
 
 .feedback__title {
-  font-size: 25px;
-  line-height: 30px;
+  font-size: $base-font-size*2.5;
+  line-height: $base-line-height*1.5;
   margin: 0;
 }
 
 .feedback__text {
-  font-size: $base-font-size;
-  line-height: 30px;
+  font-size: $base-font-size*1.5;
+  line-height: $base-line-height*1.5;
   padding: 24px 0;
 }
 
@@ -23,118 +23,19 @@
 .feedback__author-name {
   display: block;
   margin-bottom: 4px;
-  font-size: 18px;
-  line-height: $base-line-height;
+  font-size: $base-font-size*1.8;
+  line-height: $base-line-height*1.2;
   font-style: normal;
   font-weight: 700;
 }
 
 .feedback__author-link {
   display: block;
-  font-size: 18px;
-  line-height: $base-line-height;
+  font-size: $base-font-size*1.8;
+  line-height: $base-line-height*1.2;
   font-style: normal;
 }
 
 .feedback__btn {
   width: 260px;
-}
-
-@media (min-width:$break-tablet) {
-  .feedback {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 350px;
-      height: 457px;
-      background: url("../img/review@1x.jpg");
-      top: 0;
-      left: -50px;
-    }
-  }
-
-  .feedback__wrapper {
-    position: relative;
-    padding: 77px 0;
-  }
-
-  .feedback__title {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .feedback__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .feedback__author-name {
-    margin-bottom: 7px;
-  }
-
-  .feedback__list {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-  }
-
-  .feedback__text {
-    padding-top: 48px;
-    padding-bottom: 57px;
-  }
-
-  .feedback__btn {
-    position: absolute;
-    width: 175px;
-    top: 80px;
-    right: 0;
-  }
-
-  .feedback__author {
-    width: 320px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: $break-tablet) and (min-resolution: 144dpi), (min-width: $break-tablet) and (min-resolution: 1.5dppx) {
-  .feedback::before {
-    background-image: url("../img/review@2x.jpg");
-    background-size: 350px auto;
-  }
-}
-
-@media (min-width:$break-desktop) {
-  .feedback {
-    margin-top: 30px;
-    margin-bottom: 120px;
-
-    &::before {
-      left: 0;
-    }
-  }
-
-  .feedback__wrapper {
-    padding: 44px 0;
-  }
-
-  .feedback__text {
-    padding-top: 18px;
-    padding-bottom: 39px;
-  }
-
-  .feedback__author {
-    width: 500px;
-  }
-
-  .feedback__title {
-    padding-left: 175px;
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .feedback__list {
-    padding-left: 175px;
-  }
 }

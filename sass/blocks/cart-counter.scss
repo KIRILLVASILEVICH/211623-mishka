@@ -2,26 +2,7 @@
   position: relative;
   display: block;
   padding: 26px 0 26px 58px;
-  font-size: 17px;
-  line-height: $base-line-height;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*1.2;
 }
 
-.cart-counter svg {
-  position: relative;
-  right: 30px;
-}
-
-.cart-counter:hover .icon--cart{
-  fill: $bg-light-mint;
-}
-
-.cart-counter:active .icon--cart{
-  fill: rgba($bg-light-mint, 0.3);
-}
-
-@media (min-width:$break-tablet) {
-  .cart-counter {
-    padding: 33px 0 32px 60px;
-    border-left: 1px solid $border-light-gray;
-  }
-}

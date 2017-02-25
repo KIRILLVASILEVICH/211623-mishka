@@ -19,12 +19,3 @@
     background: $font-light-mint, url(/img/logo-htmlacademy.svg) no-repeat 50% 50%;
   }
 }
-
-@media (min-width:$break-tablet) {
-  .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 34px 0;
-  }
-}
