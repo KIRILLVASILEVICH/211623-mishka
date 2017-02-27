@@ -2,18 +2,6 @@
   padding-top: 22px;
   padding-bottom: 30px;
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 11.5px;
-    background: url("../img/zigzag-line.svg");
-    background-size: 19px 11.5px;
-    background-repeat: repeat;
-    bottom: 0;
-    z-index: 2;
-  }
 }
 
 .about__item {
@@ -22,13 +10,108 @@
 }
 
 .about__title {
-  font-size: $base-font-size*2.5;
-  line-height: $base-line-height*1.5;
+  font-size: 25px;
+  line-height: 30px;
   margin: 0;
 }
 
 .about__text {
-  font-size: $base-font-size*1.7;
-  line-height: $base-line-height;
+  font-size: 17px;
+  line-height: auto;
   font-weight: 700;
+}
+
+@media (min-width:$break-tablet) {
+  .about {
+    padding: 13px 0 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 23px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 38px 23px;
+      background-repeat: repeat;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  .about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 8px;
+  }
+
+  .about__item {
+    width: 334px;
+    padding-bottom: 49px;
+
+    &--01 {
+      order: 1;
+    }
+
+    &--02 {
+      order: 3;
+    }
+
+    &--03 {
+      order: 5;
+    }
+
+    &--04 {
+      order: 2;
+    }
+
+    &--05 {
+      order: 4;
+    }
+
+    &--06 {
+      order: 6;
+    }
+  }
+
+  .about__text {
+    font-size: 20px;
+    line-height: auto;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width:$break-desktop) {
+  .about {
+    padding-top: 23px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 34px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 57px 34px;
+      background-repeat: repeat;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  .about__wrapper {
+    padding-left: 175px;
+  }
+
+  .about__item {
+    width: 350px;
+  }
+
+  .about__title {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

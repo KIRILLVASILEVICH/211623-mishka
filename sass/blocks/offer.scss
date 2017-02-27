@@ -5,9 +5,9 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 11.5px;
+    height: 11px;
     background: url("../img/zigzag-line.svg");
-    background-size: 19px 11.5px;
+    background-size: 19px 11px;
     background-repeat: repeat;
     bottom: 0;
     z-index: 2;
@@ -20,21 +20,21 @@
 
 .offer__title {
   margin: 5px 0;
-  font-size: $base-font-size*2.5;
-  line-height: $base-line-height*1.5;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .offer__feature {
-  font-size: $base-font-size*1.7;
-  line-height: $base-line-height*0.8;
+  font-size: 17px;
+  line-height: 16px;
   text-transform: uppercase;
   color: $bg-light-mint;
   font-weight: 700;
 }
 
 .offer__content {
-  font-size: $base-font-size*1.5;
-  line-height: $base-line-height*1.2;
+  font-size: 15px;
+  line-height: 24px;
   margin-top: 26px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .offer__img {
-  width: 260px;
+  width: 100%;
   height: 315px;
 }
 
@@ -62,13 +62,164 @@
   padding: 24px 0;
   color: $font-gray;
   text-align: center;
-  font-size: $base-font-size*1.7;
-  line-height: $base-line-height*1.2;
+  font-size: 17px;
+  line-height: 24px;
   font-weight: 700;
 }
 
 .offer__btn {
   margin-top: 25px;
   width: 260px;
+}
+
+@media (min-width:$break-tablet) {
+  .offer {
+    padding-bottom: 54px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 23px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 38px 23px;
+      background-repeat: repeat;
+      bottom: 7px;
+      z-index: 2;
+    }
+  }
+
+  .offer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 38px;
+  }
+
+  .offer__header {
+    /*flex-basis: 100%;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .offer__value {
+    padding: 7px 30px 8px 0;
+  }
+
+  .offer__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .offer__feature {
+    width: 126px;
+    text-align: center;
+  }
+
+  .offer__content {
+    width: 334px;
+    margin-top: 45px;
+    padding-right: 44px;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .offer__properties {
+    margin: 36px 0 167px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .offer__img {
+    width: 334px;
+    height: 404px;
+    margin-top: 53px;
+  }
+
+  .offer__footer {
+    /*flex-basis: 290px;*/
+    padding: 0;
+    margin-top: -111px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .offer__btn {
+    margin-top: 34px;
+    width: 100%;
+  }
+}
+@media (min-width:$break-desktop) {
+  .offer {
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 34px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 57px 34px;
+      background-repeat: repeat;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  .offer__wrapper {
+    display: block;
+    position: relative;
+    font-size: 17px;
+    padding-top: 20px;
+  }
+
+  .offer__title {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
+  }
+
+  .offer__content {
+    margin-left: 175px;
+    margin-top: 40px;
+    width: 350px;
+    padding-right: 58px;
+    border: 1px solid transparent;
+  }
+
+  .offer__properties {
+    margin: 50px 0 105px;
+  }
+
+  .offer__img {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    width: 525px;
+    height: 636px;
+  }
+
+  .offer__footer {
+    margin: 0 0 0 175px;
+    width: 290px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .offer__header {
+    justify-content: flex-start;
+    margin: 29px 0;
+  }
+
+  .offer__feature {
+    order: 1;
+    width: 170px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
 }
 
